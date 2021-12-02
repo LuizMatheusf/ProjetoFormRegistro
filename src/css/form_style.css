@@ -1,0 +1,257 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+ h2, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End reset */
+
+html {
+	background: #4070f4;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Registro {
+	margin-top: 3px;
+	position: relative;
+	max-width: 430px;
+	width: 100%;
+	background: #fff;
+	padding: 34px;
+	border-radius: 22px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2)
+}
+
+.Registro h1 {
+	padding-bottom: 3px;
+	position: relative;
+	font-size: 28px;
+	font-weight: 600;
+	color: #333;
+}
+
+.Registro h1::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 28px;
+	background: #4070f4;
+}
+
+.Registro form {
+	margin-top: 30px;
+}
+
+.Registro form .input-box {
+	position: relative;
+	height: 52px;
+	margin: 18px;
+}
+
+form .input-box input {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	padding: 0 0 0 5px;
+	font-size: 17px;
+	font-weight: 300;
+	color: #333;
+	border: 1.5px solid #c7bebe;
+	border-bottom-width: 2.5px;
+	border-radius: 6px;
+	transition: all 0.3s ease;
+}
+
+.input-box input:focus{
+	border-color:#4070f4;
+}
+
+.input-box .fa-eye-slash, .fa-eye{
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #A6A6A6;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.input-box input{
+	height: 60px;
+	width: 100%;
+	border: 2px solid #d3d3d3;
+	border-radius: 4px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #333;
+	outline: none;
+	padding: 0 50px 0 16px;
+}
+
+.alertEmail{
+	display: none;
+	margin: 18px;
+}
+
+.alertEmail.ativo{
+	display: block;
+	
+}
+
+.alertEmail .exclamacao{
+	display: flex;
+	align-items: center;
+}
+
+.exclamacao .alert-icon{
+	margin-right: 8px;
+	font-size: 18px;
+}
+
+.exclamacao .emailValido{
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.indicadorPw{
+	display: none;
+	margin: 18px;
+}
+
+.indicadorPw.ativo{
+	display: block;
+	
+}
+
+.indicadorPw .exclamacao2{
+	display: flex;
+	align-items: center;
+}
+
+.exclamacao2 .alert-icon2{
+	margin-right: 8px;
+	font-size: 18px;
+}
+
+.exclamacao2 .senhaForte{
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.alertPw{
+	display: none;
+	margin: 18px;
+}
+
+.alertPw.ativo{
+	display: block;
+	
+}
+
+.alertPw .exclamacao3{
+	display: flex;
+	align-items: center;
+}
+
+.exclamacao3 .alert-icon3{
+	margin-right: 8px;
+	font-size: 18px;
+}
+
+.exclamacao3 .senhaValida{
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+form .politica{
+	display: flex;
+	align-items: center;
+}
+
+form  h3 {
+	color: #707070;
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.input-box.botao input{
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 600;
+	border: none;
+	background:#4070f4;
+	cursor: pointer;
+}
+
+.input-box.botao input:hover{
+	background:#0e4bf1;
+}
+
+form .texto h3{
+	color: #333;
+	width: 100%;
+	text-align: center;
+}
+
+form .texto h3 a:hover{
+	color:#4070f4;
+	text-decoration: underline;
+}
